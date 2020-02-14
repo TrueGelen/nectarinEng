@@ -85,10 +85,10 @@ body, div, h1, h2, h3, h4, p, input {
 	}
 }
 
-.uniqueizer{
+.uniqueizer11331{
 	position: relative;
-
-
+	max-width: 1920px;
+	overflow: hidden;
 }
 
 //-----------header--
@@ -215,20 +215,20 @@ body, div, h1, h2, h3, h4, p, input {
 		left: 0;
 		top: 0;
 		transform: translateY(20.5%);
-		width: 365px;
+		width: 355px;
 
 		@include to(1500px){
-			width: 335px;
+			width: 320px;
 		}
 
 		@include to(1200px){
-			width: 21.3vw;
+			width: 20.5vw;
 		}
 
-		@include sm(width, 24vw);
+		@include sm(width, 23.1vw);
 
 		@include xs-block{
-			width: 33vw;
+			width: 31.4vw;
 			transform: translateY(0%);
 		}
 	}
@@ -287,11 +287,11 @@ body, div, h1, h2, h3, h4, p, input {
 	&__wordSt2{
 		// font-size: 6vw;
 		// font-size: 70px;
-		font-size: 3em;
+		font-size: 3.15em;
 		transform: translateY(-20%);
 
 		@include to(1200px){
-			font-size: 3.5vw;
+			font-size: 3.65vw;
 		}
 
 		@include sm(font-size, 4.2vw);
@@ -313,17 +313,35 @@ body, div, h1, h2, h3, h4, p, input {
 		@include xs(font-size, 8.7vw);
 	}
 
+	&__wordSt3-5{
+		// font-size: 8vw;
+		// font-size: 95px;
+		font-size: 2.15em;
+		letter-spacing: 1px;
+		transform: translateY(-20%);
+
+		@include to(1200px){
+			font-size: 2.5vw;
+		}
+
+		@include sm(font-size, 2.8vw);
+		@include xs(font-size, 3.2vw);
+	}
+
 	&__wordSt4{
 		// font-size: 5.8vw;
 		font-size: 4.2em;
-		transform: translateY(-20%);
+		transform: translateY(-15%);
 
 		@include to(1200px){
 			font-size: 5vw;
 		}
 
 		@include sm(font-size, 5.8vw);
-		@include xs(font-size, 6.7vw);
+		@include xs-block{
+			font-size: 6.7vw;
+			transform: translateY(-10%);
+		}
 	}
 
 	&__wordSt5{
@@ -333,10 +351,14 @@ body, div, h1, h2, h3, h4, p, input {
 
 		@include to(1200px){
 			font-size: 4.5vw;
+			transform: translateY(-15%);
 		}
 
 		@include sm(font-size, 5.2vw);
-		@include xs(font-size, 5.9vw);
+		@include xs-block{
+			font-size: 5.95vw;
+			transform: translateY(-10%);
+		}
 	}
 
 	&__wordSt6{
@@ -349,46 +371,26 @@ body, div, h1, h2, h3, h4, p, input {
 		}
 
 		@include sm(font-size, 4.2vw);
-		@include xs(font-size, 4.8vw);
+		@include xs-block{
+			font-size: 4.8vw;
+			transform: translateY(-10%);
+		}
 	}
 
 	&__wordSt7{
 		// font-size: 3.3vw;
-		font-size: 2.65em;
+		font-size: 3.7em;
 		transform: translateY(-10%);
 
 		@include to(1200px){
-			font-size: 3.15vw;
+			font-size: 4.3vw;
 		}
 
-		@include sm(font-size, 3.6vw);
-		@include xs(font-size, 4.1vw);
-	}
-
-	&__wordSt8{
-		// font-size: 7.1vw;
-		font-size: 2.4em;
-		// transform: translateY(-10%);
-
-		@include to(1200px){
-			font-size: 2.8vw;
+		@include sm(font-size, 5vw);
+		@include xs-block{
+			font-size: 5.65vw;
+			transform: translateY(0%);
 		}
-
-		@include sm(font-size, 3.2vw);
-		@include xs(font-size, 3.7vw);
-	}
-
-	&__wordSt9{
-		// font-size: 2.9vw;
-		font-size: 2.3em;
-		// transform: translateY(%);
-
-		@include to(1200px){
-			font-size: 2.7vw;
-		}
-
-		@include sm(font-size, 3.1vw);
-		@include xs(font-size, 3.6vw);
 	}
 }
 
@@ -547,11 +549,11 @@ body, div, h1, h2, h3, h4, p, input {
 			top: 45vw;
 		}
 
-		@include lg(top, 41vw);
-		@include md(top, 45vw);
+		@include lg(top, 44vw);
+		@include md(top, 50vw);
 		@include sm-block{
-			width: 12vw;
-			top: 50vw;
+			width: 10vw;
+			top: 52vw;
 		};
 
 		@include xs-block{
@@ -666,6 +668,7 @@ body, div, h1, h2, h3, h4, p, input {
 		text-align: right;
 		margin-bottom: 25px;
 		font-size: 46px;
+		line-height: 1;
 
 		@include to(1500px){
 			font-size: 2.8vw;
@@ -684,7 +687,7 @@ body, div, h1, h2, h3, h4, p, input {
 	&__p{
 		text-align: right;		
 		line-height: 1.3;
-		font-size: 30px;
+		font-size: 28px;
 		margin-bottom: 25px;
 
 		@include to(1500px){
@@ -696,9 +699,8 @@ body, div, h1, h2, h3, h4, p, input {
 		@include md(font-size, 2vw);
 		@include sm(font-size, 2.2vw);
 		@include xs-block{
-			font-size: 3vw;
+			font-size: 2.8vw;
 			line-height: 1.45;
-			margin-bottom: 30px;
 		}
 		@include xxs(margin-bottom, 15px);
 	}
@@ -713,6 +715,7 @@ body, div, h1, h2, h3, h4, p, input {
 		font-weight: 400;
 		letter-spacing: 1px;
 		margin-bottom: 50px;
+		line-height: 1;
 
 		font-size: 60px;
 
@@ -1345,6 +1348,7 @@ body, div, h1, h2, h3, h4, p, input {
 	width: 100%;
 	font-family: Stolzl-Regular, sans-serif;
 	margin-bottom: 45px;
+	line-height: 1;
 
 	@include to(1500px){
 		margin-bottom: 3.4vw;
@@ -1499,6 +1503,7 @@ body, div, h1, h2, h3, h4, p, input {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		line-height: 1;
 
 		@include md(width, 100%);
 	}
@@ -1694,6 +1699,7 @@ body, div, h1, h2, h3, h4, p, input {
 	font-family: Stolzl-Regular, sans-serif;
 	text-align: center;
 	margin: 30px 0px;
+	line-height: 1;
 
 	@include sm-block{
 		margin: 15px 0;
